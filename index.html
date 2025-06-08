@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harmoni Grup Indonesia</title>
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/home.css" />
+  </head>
+  <body>
+    <header>
+      <div class="lokasi">
+        <a href="#">Jl. Bukit Menteng Cipeucang, Citra indah City , Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820</a>
+      </div>
+      <nav class="nav-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+      
+    </header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/img/logo/logohgi.png" alt="hgi" height="25">
+            <i class="fas fa-bars hamburger" onclick="hamburgerMenu()"></i>
+            
+        </div>
+        
+        <nav class="nav-navbar" id="nav-navbar">
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Pencarian...">
+            <button class="search-button">
+              <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search">
+            </button>
+          </div>
+          <a href="#" class="active">Home</a>
+          <a href="#">Project</a>
+          <a href="#">About</a>
+          <a href="#">CSR</a>
+          <a href="#">Contact</a>
+          
+        </nav>
+    </nav>
+    <section class="hero">
+      <h1>Make it Dream & Make it Happend</h1>
+      <h2>With</h2>
+      <h1>Harmoni Grup Indonesia</h1>
+      <h3>"Solusi Investasi Tanah Kavling Aman, Nyaman dan Terpercaya."</h3>
+    </section>
+    <section class="features">
+      <div class="feature">
+        <i class="fas fa-gem quality-icon"></i>
+        <h3>Quality Product</h3>
+        <p><a href="#">Learn More</a></p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-tags"></i>
+        <h3>Affordable Price</h3>
+        <p><a href="#">Learn More</a></p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-chart-line"></i>
+        <h3>Multiple Value</h3>
+        <p><a href="#">Learn More</a></p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-headset"></i>
+        <h3>Service Excelent</h3>
+        <p><a href="#">Learn More</a></p>
+      </div>
+    </section>
+    <section class="title-ongoing">
+      <h2>ON GOING PROJECT !</h2>
+    </section>
+    <section class="display-onAir">
+      
+      <div class="onair">
+        <img src="assets/img/logo/hhvlogo.png" alt="hhvlogo">
+        <h2>Harmoni Horizon Valley</h2>
+        <strong>Kavling Exclusive Healthy Life & Productive</strong>
+      </div>
+      <div class="onair">
+        <div class="sit-count">
+          <h3>Unit Sold</h3>
+          <h3 class="text-count-sit" id="sit-ttl">Unit Sold</h3>
+        </div>
+        
+        <div class="sit-count">
+          <h3>Unit Available</h3>
+          <h3 class="text-count-sit" id="sit-ss"></h3>
+        </div>
+      </div>
+    
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/11.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.9.0/firebase-database-compat.js"></script>
+    <script type="module" src="js/home.js">
+
+    </script>
+    <script src="js/utils.js"></script>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <div class="logo-footer">
+            <img src="assets/img/logo/logoiconhgi.png" alt="Logo HGI">
+            <div>
+              <h3>HARMONI GRUP INDONESIA</h3>
+              <p>Smart Investment</p>
+            </div>
+          </div>
+          <p>Jl. Bukit Menteng Cipeucang, Citra indah City , Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820</p>
+          <p>Telp: (021) 8994-2798</p>
+          <p class="copyright">&copy; 2025 Harmoni Grup Indonesia.</p>
+        </div>
+  
+        <div class="footer-column center">
+          <h3>Ikuti Kami</h3>
+          <div class="social-icons-footer">
+            <a href="#"><img src="assets/img/icon/fb.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/img/icon/tt.png" alt="TikTok"></a>
+            <a href="#"><img src="assets/img/icon/yt.png" alt="YouTube"></a>
+            <a href="#"><img src="assets/img/icon/ig.png" alt="Instagram"></a>
+          </div>
+          <p>@harmonigrup.indonesia</p>
+        </div>
+  
+
+        <div class="footer-column">
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4434.441332530075!2d107.04833941106062!3d-6.436486162915165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6997c0aff06105%3A0x6578b23c59cafc32!2sKantor%20Harmoni%20Grup%20Indonesia!5e1!3m2!1sid!2sid!4v1749362984489!5m2!1sid!2sid" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+  
+      </div>
+    </footer>
+  </body>
+</html>
