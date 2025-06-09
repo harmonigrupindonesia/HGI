@@ -21,15 +21,15 @@ header {
 }
 .nav-links a {
   color: white;
-  margin: 0 5px;
+  margin: 0 2px;
   text-decoration: none;
 }
 .navbar {
   position: absolute;
-  top: 45px;
+  top: 35px;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
+  width: 95%;
   z-index: 10;
   background-color: white;
   color: #0a1f44;
@@ -44,10 +44,13 @@ header {
 
 .hamburger {
   display: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
 }
-
+.navbar img {
+  width: 200px;
+  height: 50px;
+}
 .navbar .logo button {
   padding: 6px 12px;
   border: none;
@@ -130,6 +133,9 @@ header {
   align-items: center;
   color: white;
   text-align: center;
+  background-repeat: no repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero h1 {
   font-size: 3rem;
@@ -146,7 +152,48 @@ header {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   animation: fadeInUp 1.2s ease-in-out;
 }
-
+.hero button {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  background-color: orange;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.popup {
+  display: none;
+  position: fixed;
+  width: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.popup img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.popup-close {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: white;
+}
+.popup-close:hover {
+  background-color: #a71d2a;
+}
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -283,6 +330,60 @@ body {
 .center {
   text-align: center;
 }
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 20px;
+  background-color: #efefef;
+}
+.about h2 {
+  text-align: center;
+  font-style: bold;
+}
+.about .deskripsi {
+  background: #0a1f44;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.about .deskripsi i {
+  color: white;
+  text-decoration: underline;
+}
+.about .deskripsi .active-learnmore {
+  display: none;
+}
+.about .deskripsi .active-learnmore.show {
+  display: block;
+}
+.about .deskripsi h3 {
+  color: yellow;
+}
+.about .deskripsi p {
+  margin-bottom: 10px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+}
+.about .deskripsi .keunggulan {
+  display: grid;
+}
+.about .deskripsi .keunggulan a {
+  color: white;
+  text-decoration: none;
+  padding: 3px;
+}
+.about .deskripsi .keunggulan a:hover {
+  color: aqua;
+}
+.about .video-porto {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
 
 @keyframes blink-anim {
   to {
@@ -325,11 +426,15 @@ body {
     font-size: 0.8rem;
   }
   .nav-links a {
-    font-size: 0.5rem;
+    font-size: 0.4rem;
   }
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .navbar img {
+    width: 40%;
+    height: 40%;
   }
   .hamburger {
     display: block;
@@ -355,7 +460,7 @@ body {
     width: 20%;
   }
   .lokasi a {
-    font-size: 0.3rem;
+    font-size: 0.4rem;
   }
   .search-container {
     width: 100%;
@@ -364,6 +469,9 @@ body {
     width: 40%;
   }
   .search-button {
-    width: 20%;
+    width: 10%;
+  }
+  .popup {
+    width: 80%;
   }
 }

@@ -18,7 +18,7 @@
   <body>
     <header>
       <div class="lokasi">
-        <a href="#">Jl. Bukit Menteng Cipeucang, Citra indah City , Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820</a>
+        <a href="#">Jl. Bukit Menteng Cipeucang, Citra indah City , Kec. Cileungsi, Kabupaten Bogor, Jawa Barat</a>
       </div>
       <nav class="nav-links">
         <a href="#">Facebook</a>
@@ -41,11 +41,10 @@
               <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search">
             </button>
           </div>
-          <a href="#" class="active">Home</a>
-          <a href="#">Project</a>
-          <a href="#">About</a>
-          <a href="#">CSR</a>
-          <a href="#">Contact</a>
+          <a href="#" class="active"><strong>Home</strong></a>
+          <a href="#"><Strong>Project</Strong></a>
+          <a href="#Abouts"><strong>Tentang Kami</strong></a>
+          <a href="#"><strong>Contact</strong></a>
           
         </nav>
     </nav>
@@ -54,12 +53,17 @@
       <h2>With</h2>
       <h1>Harmoni Grup Indonesia</h1>
       <h3>"Solusi Investasi Tanah Kavling Aman, Nyaman dan Terpercaya."</h3>
+      <button id="btnHaveItNow" href">Have it Now</button>
     </section>
-    <section class="features">
+    <div id="popup" class="popup">
+      <img id="popupImage" src="" alt="Popup Image" />
+      <button class="popup-close" onclick="closePopup()">Close</button>
+    </div>
+    <section id="featureId" class="features">
       <div class="feature">
         <i class="fas fa-gem quality-icon"></i>
         <h3>Quality Product</h3>
-        <p><a href="#">Learn More</a></p>
+        <p><a href="#" onclick="showPopup('assets/img/value/quality.png')">Learn More</a></p>
       </div>
       <div class="feature">
         <i class="fas fa-tags"></i>
@@ -77,7 +81,7 @@
         <p><a href="#">Learn More</a></p>
       </div>
     </section>
-    <section class="title-ongoing">
+    <section id="onProject" class="title-ongoing">
       <h2>ON GOING PROJECT !</h2>
     </section>
     <section class="display-onAir">
@@ -100,6 +104,45 @@
       </div>
     
     </section>
+    <div id="Abouts" class="about">
+      <h2>Tentang Kami</h2>
+    </div>
+    <section class="about">
+      <div class="deskripsi">
+        <h3>HARMONI GRUP INDONESIA</h3>
+        <p> adalah perusahaan pengembang tanah kavling yang berdiri sejak tahun <strong>2019</strong>. Dengan komitmen tinggi dan visi besar, kami telah berhasil merealisasikan <strong>12 Project</strong> nyata di berbagai wilayah, menjadi bukti nyata dedikasi kami dalam menghadirkan solusi kepemilikan lahan yang mudah, aman, dan bernilai.</p>
+        <i id="btnLmDes" onclick="about()">Learn More...</i>  
+        <div class="active-learnmore">
+          <h3>Visi</h3>
+          <p>• Menjadi pengembang tanah kavling Terkemuka dan Terpercaya yang menguasai pasar dunia dengan konsep Syariah.</p>
+          <h3>Misi</h3>
+          <p>• Memfasilitasi kepemilikan lahan untuk setiap orang</p>
+          <p>• Konsisten bermuamalah dengan standar syariah</p>
+          <p>• Amanah, bertanggung jawab, dan berdedikasi tinggi</p>
+          <h3>Kenapa Harus Harmoni Grup Indonesia?</h3>
+          <p>Kami hadir tidak hanya sebagai pengembang, tapi juga sebagai mitra terpercaya Anda dalam memiliki lahan dengan nilai strategis.</p>
+          <h3><strong>keunggulan kami:</strong></h3>
+          <div class="keunggulan">
+            <a href="#"><strong>• Quality Product</strong></a>
+            <p>Setiap proyek kami dikembangkan dengan perencanaan yang matang dan standar mutu tinggi untuk menjamin nilai jangka panjang.</p>
+            <a href="#"><strong>• Affordable Price</strong></a>
+            <p>Harga yang terjangkau membuat masyarakat dari berbagai kalangan dapat memiliki lahan impian tanpa beban berlebih.</p>
+            <a href="#"><strong>• Multiple Value</strong></a>
+            <p>Tidak hanya tanah kavling, setiap pembelian menawarkan nilai lebih, mulai dari lokasi strategis, prospek investasi, hingga ketenangan transaksi syariah.</p>
+            <a href="#"><strong>• Service Excellent</strong></a>
+            <p>Kami melayani dengan sepenuh hati, responsif, dan profesional, memastikan proses kepemilikan lahan berjalan mudah dan nyaman.</p>
+            <p><strong>Harmoni Grup Indonesia</strong> berkomitmen menjadi bagian dari solusi kepemilikan lahan yang adil dan berkelanjutan dengan tetap menjaga prinsip syariah sebagai pondasi utama. Mari wujudkan impian Anda bersama kami.</p>
+          </div>
+        </div>
+
+
+        
+      </div>
+      <!-- <div class="video-porto">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GXB5hzONyqI?si=oXtS1VYNkAK4TQDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div> -->
+    </section>
+
     <script src="https://www.gstatic.com/firebasejs/11.9.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/11.9.0/firebase-database-compat.js"></script>
     <script type="module" src="js/home.js">
