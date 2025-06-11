@@ -332,15 +332,18 @@ body {
 }
 .project-slider {
   background-color: #ffffff;
+  padding: 1rem;
 }
 .project-slider h2 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
+
 .slider-wrapper {
   position: relative;
   overflow: hidden;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 .slider-container {
@@ -350,12 +353,14 @@ body {
   mask-image: linear-gradient(
     to right,
     transparent,
-    white 20%,
-    white 80%,
+    white 10%,
+    white 90%,
     transparent
   );
   display: flex;
   align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
 .slider-container::-webkit-scrollbar {
@@ -364,21 +369,29 @@ body {
 
 .slider {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
   padding: 0;
 }
 
 .slide {
   flex: 0 0 auto;
-  width: 180px;
-  height: 120px;
-  border-radius: 10px;
+  width: clamp(140px, 40vw, 180px);
+  height: clamp(100px, 25vw, 120px);
+  border-radius: 0.625rem;
   overflow: hidden;
   background-color: #333;
   transition: transform 0.4s ease, width 0.4s ease, height 0.4s ease;
   cursor: pointer;
   filter: blur(1px);
   opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.slide:hover {
+  transform: scale(1.05);
+  filter: none;
+  opacity: 1;
+  z-index: 2;
 }
 
 .slide img {
@@ -388,19 +401,19 @@ body {
 }
 
 .slide.middle {
-  width: 300px;
-  height: 200px;
+  width: clamp(260px, 60vw, 300px);
+  height: clamp(160px, 40vw, 200px);
   z-index: 2;
   filter: none;
   opacity: 1;
 }
 
 .slide:first-child {
-  margin-left: calc(50vw - 100px);
+  margin-left: calc(50vw - 150px);
 }
 
 .slide:last-child {
-  margin-right: calc(50vw - 100px);
+  margin-right: calc(50vw - 150px);
 }
 
 .nav-button-slide {
@@ -410,22 +423,24 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   color: white;
-  font-size: 24px;
-  padding: 10px;
+  font-size: 1.5rem;
+  padding: 0.75rem;
   cursor: pointer;
   z-index: 3;
+  border-radius: 50%;
 }
 
 .nav-left-slide {
-  left: 10px;
+  left: 0.5rem;
 }
 
 .nav-right-slide {
-  right: 10px;
+  right: 0.5rem;
 }
 
 .pagination {
-  margin-top: 20px;
+  margin-top: 1.5rem;
+  text-align: center;
 }
 
 .pagination button {
@@ -433,17 +448,19 @@ body {
   color: white;
   border: none;
   border-radius: 50%;
-  width: 12px;
-  height: 12px;
-  margin: 0 5px;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0 0.3rem;
   opacity: 0.5;
   cursor: pointer;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, transform 0.2s;
 }
 
-.pagination button.active {
-  background-color: white;
+.pagination button.active,
+.pagination button:hover {
+  background-color: #fff;
   opacity: 1;
+  transform: scale(1.2);
 }
 .about {
   display: grid;
@@ -595,20 +612,18 @@ body {
   }
 
   .slide.middle {
-    width: 180px;
-    height: 120px;
+    width: 240px;
+    height: 160px;
   }
 
-  .slide:first-child {
-    margin-left: calc(50vw - 60px);
-  }
-
+  .slide:first-child,
   .slide:last-child {
-    margin-right: calc(50vw - 60px);
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .nav-button-slide {
-    font-size: 20px;
-    padding: 8px;
+    font-size: 1.25rem;
+    padding: 0.5rem;
   }
 }
