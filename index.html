@@ -18,13 +18,13 @@
   <body>
     <header>
       <div class="lokasi">
-        <a href="#">Jl. Bukit Menteng Cipeucang, Citra indah City , Kec. Cileungsi, Kabupaten Bogor, Jawa Barat</a>
+        <a href="https://maps.app.goo.gl/EKEWYJwN1XeLCUAP6">Jl. Bukit Menteng Cipeucang, Citra indah City , Kec. Cileungsi, Kabupaten Bogor, Jawa Barat</a>
       </div>
       <nav class="nav-links">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">YouTube</a>
-        <a href="#">TikTok</a>
+        <a href="https://www.facebook.com/official.harmonigrupindonesia/">Facebook</a>
+        <a href="https://www.instagram.com/harmonigrup.indonesia/">Instagram</a>
+        <a href="https://www.youtube.com/@harmonigrup.indonesia">YouTube</a>
+        <a href="https://www.tiktok.com/@harmonigrup.indonesia">TikTok</a>
       
     </header>
     <nav class="navbar">
@@ -42,7 +42,7 @@
             </button>
           </div>
           <a href="#" class="active"><strong>Home</strong></a>
-          <a href="#"><Strong>Project</Strong></a>
+          <a href="#projectId"><Strong>Project</Strong></a>
           <a href="#Abouts"><strong>Tentang Kami</strong></a>
           <a href="#"><strong>Contact</strong></a>
           
@@ -68,17 +68,17 @@
       <div class="feature">
         <i class="fas fa-tags"></i>
         <h3>Affordable Price</h3>
-        <p><a href="#">Learn More</a></p>
+        <p><a href="#" onclick="showPopup('assets/img/value/afford.png')">Learn More</a></p>
       </div>
       <div class="feature">
         <i class="fas fa-chart-line"></i>
         <h3>Multiple Value</h3>
-        <p><a href="#">Learn More</a></p>
+        <p><a href="#" onclick="showPopup('assets/img/value/multiple.png')">Learn More</a></p>
       </div>
       <div class="feature">
         <i class="fas fa-headset"></i>
         <h3>Service Excelent</h3>
-        <p><a href="#">Learn More</a></p>
+        <p><a href="#" onclick="showPopup('assets/img/value/service.png')">Learn More</a></p>
       </div>
     </section>
     <section id="onProject" class="title-ongoing">
@@ -102,8 +102,54 @@
           <h3 class="text-count-sit" id="sit-ss"></h3>
         </div>
       </div>
-    
     </section>
+    <section id="projectId" class="project-slider">
+      <h2>PROJECT</h2>
+      <div class="slider-wrapper">
+        <button class="nav-button-slide nav-left-slide" id="scrollLeft">&#8249;</button>
+        <div class="slider-container" id="sliderContainer">
+          <div class="slider" id="slider">
+            <a href="project/HarmoniHorizonValley.html" class="slide"
+              ><img src="assets/img/project/tumbnail/h1.jpg" alt="Photo 1"
+            /></a>
+            <a href="project/HarmoniHorizonValley.html" class="slide"
+              ><img src="assets/img/project/tumbnail/h2.jpg" alt="Photo 2"
+            /></a>
+            <a href="project/HarmoniHorizonValley.html" class="slide"
+              ><img src="assets/img/project/tumbnail/h3.jpg" alt="Photo 3"
+            /></a>
+            <a href="project/HarmoniHorizonValley.html" class="slide"
+              ><img src="assets/img/project/tumbnail/h4.jpg" alt="Photo 4"
+            /></a>
+            <a href="project/HarmoniHorizonValley.html" class="slide"
+              ><img src="assets/img/project/tumbnail/hfv.jpg" alt="Photo 5"
+            /></a>
+            <a href="project/HarmoniHorizonValley.html" class="slide"
+              ><img src="assets/img/project/tumbnail/hfvse.jpg" alt="Photo 5"
+            /></a>
+            <a href="project/HarmoniHorizonValley.html" class="slide"
+              ><img src="assets/img/project/tumbnail/hwv.jpg" alt="Photo 5"
+            /></a>
+            <a href="project/HarmoniHorizonValley.html" class="slide"
+              ><img src="assets/img/project/tumbnail/hnp.jpg" alt="Photo 5"
+            /></a>
+            <a href="project/HarmoniHorizonValley.html" class="slide"
+              ><img src="assets/img/project/tumbnail/hfh.jpg" alt="Photo 5"
+            /></a>
+            <a href="project/HarmoniHorizonValley.html" class="slide"
+              ><img src="assets/img/project/tumbnail/tph.jpg" alt="Photo 5"
+            /></a>
+            <a href="project/HarmoniHorizonValley.html" class="slide"
+              ><img src="assets/img/project/tumbnail/hhv.jpg" alt="Photo 5"
+            /></a>
+          </div>
+        </div>
+        <button class="nav-button-slide nav-right-slide" id="scrollRight">&#8250;</button>
+      </div>
+  
+      <div class="pagination" id="pagination"></div>
+    </section>
+    
     <div id="Abouts" class="about">
       <h2>Tentang Kami</h2>
     </div>
@@ -126,7 +172,7 @@
             <a href="#"><strong>• Quality Product</strong></a>
             <p>Setiap proyek kami dikembangkan dengan perencanaan yang matang dan standar mutu tinggi untuk menjamin nilai jangka panjang.</p>
             <a href="#"><strong>• Affordable Price</strong></a>
-            <p>Harga yang terjangkau membuat masyarakat dari berbagai kalangan dapat memiliki lahan impian tanpa beban berlebih.</p>
+            <p>Harga yang terjangkau membuat masyarakat dari berbagai kalangan dapat memiliki lahan impian.</p>
             <a href="#"><strong>• Multiple Value</strong></a>
             <p>Tidak hanya tanah kavling, setiap pembelian menawarkan nilai lebih, mulai dari lokasi strategis, prospek investasi, hingga ketenangan transaksi syariah.</p>
             <a href="#"><strong>• Service Excellent</strong></a>
@@ -146,7 +192,6 @@
     <script src="https://www.gstatic.com/firebasejs/11.9.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/11.9.0/firebase-database-compat.js"></script>
     <script type="module" src="js/home.js">
-
     </script>
     <script src="js/utils.js"></script>
     <footer class="footer">
@@ -167,10 +212,10 @@
         <div class="footer-column center">
           <h3>Ikuti Kami</h3>
           <div class="social-icons-footer">
-            <a href="#"><img src="assets/img/icon/fb.png" alt="Facebook"></a>
-            <a href="#"><img src="assets/img/icon/tt.png" alt="TikTok"></a>
-            <a href="#"><img src="assets/img/icon/yt.png" alt="YouTube"></a>
-            <a href="#"><img src="assets/img/icon/ig.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/official.harmonigrupindonesia/"><img src="assets/img/icon/fb.png" alt="Facebook"></a>
+            <a href="https://www.tiktok.com/@harmonigrup.indonesia"><img src="assets/img/icon/tt.png" alt="TikTok"></a>
+            <a href="https://www.youtube.com/@harmonigrup.indonesia"><img src="assets/img/icon/yt.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/harmonigrup.indonesia/"><img src="assets/img/icon/ig.png" alt="Instagram"></a>
           </div>
           <p>@harmonigrup.indonesia</p>
         </div>
