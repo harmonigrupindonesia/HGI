@@ -27,7 +27,7 @@ body {
 }
 
 h2 {
-  color: black;
+  color: var(--secondary);
   text-align: center;
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
 }
@@ -62,7 +62,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: var(--secondary);
   z-index: -1;
 }
 
@@ -104,7 +104,7 @@ h2 {
 .back-button {
   display: flex;
   align-items: center;
-  color: white;
+  color: var(--bg);
   background-color: var(--secondary);
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -120,7 +120,7 @@ h2 {
   margin-right: 0.5rem;
   width: 20px;
   height: 20px;
-  fill: white;
+  fill: var(--bg);
 }
 
 .sold-out {
@@ -141,7 +141,7 @@ h2 {
 }
 
 .detail .det {
-  background: rgb(0, 0, 0);
+  background: var(--secondary);
   border-radius: 10px;
   padding: 20px;
   text-align: center;
@@ -193,6 +193,63 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+.container-pk {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2.5rem 1.25rem;
+  background-color: var(--primary);
+}
+
+.pk {
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--primary);
+}
+
+.pk:hover {
+  transform: translateY(-5px);
+}
+
+.pk h2 {
+  color: var(--secondary);
+  font-size: clamp(1.5rem, 2vw, 2em);
+  margin-bottom: 1.25rem;
+}
+
+.item-pk {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary);
+  border-radius: 0.625rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  color: var(--bg);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.icon-item-pk {
+  background-color: var(--thirdary);
+  border-radius: 0.625rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+  transition: background-color 0.3s;
+}
+
+.icon-item-pk::before {
+  content: "✔";
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
 
 .maps {
   display: grid;
@@ -218,12 +275,12 @@ h2 {
 }
 
 .maps h3 {
-  color: black;
+  color: var(--secondary);
   margin-bottom: 30px;
 }
 
 .maps h4 {
-  color: black;
+  color: var(--secondary);
 }
 
 .detail-testi {
@@ -392,6 +449,22 @@ h2 {
   }
   .detail p {
     font-size: 0.8rem;
+  }
+  .container-pk {
+    grid-template-columns: 1fr;
+  }
+
+  .pk h2 {
+    font-size: 1.5rem;
+  }
+
+  .item-pk {
+    font-size: 1rem;
+  }
+
+  .icon-item-pk {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 
