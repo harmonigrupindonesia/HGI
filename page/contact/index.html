@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Contact</title>
+    <link rel="stylesheet" href="../../assets/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../../assets/img/logo/logohgi.png" alt="hgi" height="25" />
+        <i class="fas fa-bars hamburger" onclick="hamburgerMenu()"></i>
+      </div>
+
+      <nav class="nav-navbar" id="nav-navbar">
+        <a href="../../index.html"><strong>Home</strong></a>
+        <a href="#" class="active"><strong>Contact</strong></a>
+      </nav>
+    </nav>
+    <div class="contact-container">
+      <div class="info-box">
+        <h2>Get In Touch With Us Now!</h2>
+        <div class="info-grid">
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <h3>Phone Number</h3>
+            <p><a href="tel:02189942798">(021) 8994-2798</a></p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:ptharmonigrupindonesia@gmail.com"
+                >ptharmonigrupindonesia@gmail.com</a
+              ><br /><a href="mailto:harmonigrupcreator@gmail.com"
+                >harmonigrupcreator@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Location</h3>
+            <p>
+              <a href=""
+                >Jl. Bukit Menteng Cipeucang, Citra indah City , Kec. Cileungsi,
+                Kabupaten Bogor, Jawa Barat 16820</a
+              >
+            </p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <h3>Working Hours</h3>
+            <p>Monday to Sunday<br />08:30 AM to 16:30 PM</p>
+            <p><strong>Friday : OFF</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-box">
+        <h2>Contact Us</h2>
+        <form action="kZxTyvGvajvsdvgasdpaWDUasdvg.php" method="POST">
+          <div class="form-row">
+            <input
+              type="text"
+              name="ngaran_na"
+              placeholder="Full Name *"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <input type="tel" name="wa_na" placeholder="Mobile No *" required />
+            <input
+              type="email"
+              name="email_na"
+              placeholder="Email *"
+              required
+            />
+          </div>
+          <textarea name="eusi_na" placeholder="Message"></textarea>
+          <label>Please type the characters *</label>
+          <p class="note">This helps us prevent spam, thank you.</p>
+          <button type="submit"><i class="fas fa-envelope"></i> Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="../../js/utils.js"></script>
+  </body>
+</html>
