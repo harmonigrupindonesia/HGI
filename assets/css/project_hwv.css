@@ -43,6 +43,7 @@ h2 {
 }
 
 .hero video {
+  background-color: var(--bg);
   position: absolute;
   top: 0;
   left: 0;
