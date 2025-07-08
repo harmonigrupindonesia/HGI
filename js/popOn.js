@@ -4,14 +4,14 @@ window.addEventListener("load", () => {
   }, 1000);
 });
 
-function closePopup() {
+function closePopupOnGoing() {
   document.getElementById("onKlikGoingId").classList.add("hidden");
 }
 function goToSection() {
   const target = document.getElementById("onProject");
   if (target) {
     target.scrollIntoView({ behavior: "smooth" });
-    closePopup();
+    closePopupOnGoing();
   }
 }
 function goSocial() {
