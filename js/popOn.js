@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.getElementById("onKlikGoingId").classList.remove("hidden");
-  }, 2000);
+  }, 1000);
 });
 
 function closePopup() {
@@ -13,4 +13,7 @@ function goToSection() {
     target.scrollIntoView({ behavior: "smooth" });
     closePopup();
   }
+}
+function goSocial() {
+  window.location.href = "/page/socials/index.html";
 }

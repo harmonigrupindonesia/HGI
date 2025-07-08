@@ -314,8 +314,8 @@ header {
 }
 
 .onair-title-base:hover {
-  color: #28a745; /* Warna hijau saat hover */
-  text-decoration: underline;
+  color: #28a745;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -580,6 +580,35 @@ body {
   transition: transform 0.3s;
 }
 
+.review-home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: var(--primary);
+}
+.review-home .det {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.review-home i {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 10px;
+}
+.review-home h3 {
+  color: var(--secondary);
+  margin-bottom: 30px;
+}
+
+.review-home h4 {
+  color: var(--secondary);
+}
+
 @keyframes blink-anim {
   to {
     visibility: hidden;
@@ -688,5 +717,8 @@ body {
   .nav-button-slide {
     font-size: 1.25rem;
     padding: 0.5rem;
+  }
+  .review-home {
+    padding: 20px 10px;
   }
 }

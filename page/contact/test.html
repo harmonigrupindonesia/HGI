@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harmoni Grup Indonesia</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        background-color: #081c3a;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 800px;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .back-button:hover {
+        background-color: #ccc;
+      }
+
+      .content h1 {
+        color: yellow;
+        margin: 10px 0 0;
+        text-align: center;
+      }
+
+      .content h2 {
+        color: yellow;
+        margin: 0 0 30px;
+        text-align: center;
+      }
+
+      .logo-socials {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .logo {
+        font-size: 120px;
+        font-weight: bold;
+        background: linear-gradient(
+          to bottom right,
+          red 25%,
+          green 25%,
+          yellow 50%,
+          blue 75%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 2px 2px 4px #000;
+        animation: floatIn 1.2s ease-in-out;
+      }
+
+      .socials {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        animation: floatIn 1.5s ease-in-out;
+      }
+
+      .social {
+        padding: 12px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        color: #000;
+        background-color: #ded3fb;
+        text-align: left;
+        transition: transform 0.3s, background-color 0.3s;
+      }
+
+      .social:hover {
+        transform: scale(1.05);
+        background-color: #c7b8f0;
+      }
+
+      .brand-name {
+        margin-top: 30px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes floatIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      /* Responsif */
+      @media (max-width: 600px) {
+        .logo-socials {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .socials {
+          width: 100%;
+        }
+
+        .logo {
+          font-size: 80px;
+        }
+
+        .social {
+          text-align: center;
+        }
+
+        .brand-name {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="back-button" onclick="goBack()">← Back Home</button>
+
+      <div class="content">
+        <h1>Miliki Tanah Kavling</h1>
+        <h2>Persembahan terbaik dari kami</h2>
+
+        <div class="logo-socials">
+          <div class="logo">H</div>
+
+          <div class="socials">
+            <button class="social whatsapp">WhatsApp</button>
+            <button class="social instagram">Instagram</button>
+            <button class="social youtube">You Tube</button>
+            <button class="social tiktok">Tik Tok</button>
+            <button class="social facebook">Facebook</button>
+          </div>
+        </div>
+
+        <h3 class="brand-name">HARMONI GRUP INDONESIA</h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
