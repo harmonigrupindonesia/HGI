@@ -17,3 +17,18 @@ function goToSection() {
 function goSocial() {
   window.location.href = "/page/socials/index.html";
 }
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+// Saat scroll, cek apakah elemen terlihat
+window.addEventListener("scroll", function () {
+  const target = document.getElementById("onProject");
+  if (isInViewport(target)) {
+    closePopupOnGoing();
+  }
+});
