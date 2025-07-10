@@ -394,7 +394,7 @@ body {
   text-align: center;
 }
 .project-slider {
-  background-color: #ffffff;
+  background-color: var(--primary);
   padding: 1rem;
 }
 .project-slider h2 {
@@ -607,6 +607,51 @@ body {
 
 .review-home h4 {
   color: var(--secondary);
+}
+.title-update-terkini {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #0a1f44;
+}
+
+.title-update-terkini h1 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.update-terkini {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #0a1f44;
+}
+
+.update-container {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.update-container:hover {
+  transform: scale(1.02);
+}
+
+.update-container iframe {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 8px;
 }
 
 @keyframes blink-anim {
