@@ -322,7 +322,28 @@ header {
 .display-onAir .onair .sit-count .text-count-sit {
   color: yellow;
 }
-
+.link-goto-on {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 40px;
+  background-color: #0a1f44;
+}
+.link-goto-on .goto-on-link {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.link-goto-on .goto-on-link h2,
+a {
+  text-decoration: none;
+}
+.link-goto-on .goto-on-link h2:hover {
+  text-decoration: underline;
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -653,6 +674,94 @@ body {
   border: none;
   border-radius: 8px;
 }
+.blog-update {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: auto; /* Tambahan agar bisa scroll horizontal di HP */
+}
+
+.blog-update main {
+  width: 100%;
+  min-width: 760px; /* Pastikan 2 kolom muat minimal */
+}
+
+/* Grid tetap 2 kolom */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.blog-update article {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.blog-update article:hover {
+  transform: translateY(-5px);
+}
+
+.blog-update h2 {
+  margin: 0;
+  padding: 20px;
+  font-size: 1.8rem;
+  background-color: #0a1f44;
+  color: white;
+  text-align: center;
+}
+
+.blog-update h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blog-update .date-blog {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin: 10px 0;
+}
+
+.gambar-blog {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gambar-blog img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gambar-blog img:hover {
+  transform: scale(1.03);
+}
+
+.text-blog {
+  padding: 20px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  margin: 0 20px 20px;
+  color: #0a1f44;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #f39c12;
+}
 
 @keyframes blink-anim {
   to {
@@ -765,5 +874,19 @@ body {
   }
   .review-home {
     padding: 20px 10px;
+  }
+  .blog-grid {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .blog-update h2 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .text-blog {
+    font-size: 0.9rem;
+    padding: 10px;
   }
 }
